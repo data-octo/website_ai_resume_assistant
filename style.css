@@ -318,6 +318,12 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
+    .book-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
 }
 
 /* Support and Privacy pages */
@@ -395,4 +401,30 @@ footer {
     box-shadow: var(--box-shadow);
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Book promo styles */
+.book-promo {
+    padding: 4rem 0;
+    margin: 2rem 0;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.book-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.book-cover {
+    max-width: 250px;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+.book-info {
+    flex: 1;
 }
