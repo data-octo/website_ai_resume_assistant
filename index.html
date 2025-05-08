@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Assistant - Your AI-Powered Job Search Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/app_icon_ai_resume_builder.JPG" alt="AI Resume Assistant Logo" class="nav-logo">
+                AI Resume Assistant
+            </a>
+            <div class="nav-links">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Job Search with AI</h1>
+            <p>Automated resume tailoring, job matching, and application tracking - all in one place.</p>
+            <div class="signup-section">
+                <div class="disclaimer-checkbox">
+                    <input type="checkbox" id="disclaimer-agree" required>
+                    <label for="disclaimer-agree">I understand and agree that I am solely responsible for reviewing all AI-generated content, and that the app assumes no liability for outcomes. <a href="privacy.html#disclaimer">Read full disclaimer</a></label>
+                </div>
+                <a href="features.html" class="button" id="start-button" disabled>Explore Features</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('disclaimer-agree').addEventListener('change', function() {
+            document.getElementById('start-button').disabled = !this.checked;
+        });
+    </script>
+
+    <main class="container">
+        <section class="benefits">
+            <h2>Why Choose AI Resume Assistant?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Save Time</h3>
+                    <p>Automate repetitive tasks and focus on what matters most - preparing for interviews.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Better Matches</h3>
+                    <p>AI-powered job matching ensures you apply to positions that fit your skills and experience.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Stay Organized</h3>
+                    <p>Track all your applications, interviews, and follow-ups in one central dashboard.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 AI Resume Assistant. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
